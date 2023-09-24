@@ -144,6 +144,7 @@
         <!-- Your video here -->
         <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4"> -->
+
           <img src="static/images/teaser.gif" alt="3DMiner Overview"/>
           <!-- <video controls loop>
             <source src="static/images/teaser_vid.mov">
@@ -203,7 +204,7 @@ Furthermore, we show how 3DMiner can be applied to in-the-wild data by reconstru
             <!-- Youtube embed code here -->
             <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
            -->
-           <img src="static/images/pipeline.pdf" alt="3DMiner Overview"/>
+           <img src="static/images/pipeline.jpg" alt="3DMiner Overview"/>
            <div class="content has-text-justified">
              <p>
                Our method starts by grouping images that depict similar 3D shapes, regardless of the texture of the shape, the camera view-point or the background. To do so, we perturb each image  with various transformations (e.g. color jittering, perspective and rotation) and we pool their DINO-ViT features to create a robust image embedding.
@@ -226,6 +227,7 @@ Finally, we jointly refine the camera parameters and learn an occupancy field to
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
+
       <h2 class="title is-3">Reconstruction Results</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -235,20 +237,30 @@ Finally, we jointly refine the camera parameters and learn an occupancy field to
             <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
            -->
 
+           <!-- <div style="width: 23%; float: left;"><img style="width: 50%" src="static/images/pickelhaube_ref.png" alt="3DMiner Overview"/> </div>
+           <div style="width: 23%; float: left;"><img style="width: 50%" src="static/images/umbrella_ref.png" alt="3DMiner Overview"/> </div>
+           <div style="width: 23%; float: left;"><img style="width: 50%" src="static/images/ps5_controller_ref.png" alt="3DMiner Overview"/> </div>
+           <div style="width: 23%; float: left;"><img style="width: 50%" src="static/images/tobacco_pipe_ref.png" alt="3DMiner Overview"/> </div> -->
 
 
+           <img style="width: 23%; float: left;" src="static/images/pickelhaube.gif" alt="3DMiner Overview"/>
+           <img style="width: 23%; float: left;" src="static/images/umbrella.gif" alt="3DMiner Overview"/>
+           <img style="width: 23%; float: left;" src="static/images/ps5_controller.gif" alt="3DMiner Overview"/>
+           <img style="width: 23%; float: left;" src="static/images/tobacco_pipe.gif" alt="3DMiner Overview"/>
 
-           <img src="static/images/gallery.pdf" alt="3DMiner Overview"/>
-           <p>Qualiitative Results on Pix3D and LAION-5B. To the best of our knowledge <em>we are the first to perform reconstruction on the challenging LAION-5B image dataset</em>.</p>
+           <img src="static/images/gallery.jpg" alt="Results Gallery"/>
+           <p>Qualitative Results on Pix3D and LAION-5B. To the best of our knowledge <em>we are the first to perform reconstruction on the challenging LAION-5B image dataset</em>.</p>
+           <br><br>
+           <img src="static/images/results.png" alt="Tabke" width="700" />
+           <p>Quantitative Comparisons against SMR and Unicorn on Pix3D Chairs.</p>
 
            <br><br>
-              <img src="static/images/results.png" alt="3DMiner Overview" width="700" />
-              <p>Quantitative Comparisons against SMR and Unicorn on Pix3D Chairs.</p>
+           <img src="static/images/threshold.jpg" alt="Reprojection Thresholding" width="500" />
+           <p>We plot the reprojection error per cluster (averaged over each image in the cluster) in ascending order and show representative
+             reconstructions for four data points. We empirically observe that the reprojection error is a good indicator of the quality of the reconstruction. </p>
 
-              <br><br>
-              <img src="static/images/threshold.pdf" alt="3DMiner Overview" width="500" />
-              <p>We plot the reprojection error per cluster (averaged over each image in the cluster) in ascending order and show representative
-                reconstructions for four data points. We empirically observe that the reprojection error is a good indicator of the quality of the reconstruction. </p>
+      <!-- Paper video. -->
+
 
           <!-- </div> -->
         </div>
@@ -261,6 +273,50 @@ Finally, we jointly refine the camera parameters and learn an occupancy field to
 </section>
 <!-- End youtube video -->
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Clustering Results</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <!-- <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           -->
+           <img src="static/images/clusters.jpg" alt="Tabke" width="900" />
+           <p>We show the clustering results on Pix3D Chairs when applying our augmentation scheme.</p>
+
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Analysis</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <!-- <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           -->
+
+
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
